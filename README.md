@@ -72,6 +72,9 @@ ServerAliveInterval 60
 zypper in git vim
 git config --global ubmodule.fetchJobs 10
 git config --global --edit
+#and configure your user
+```
+```
 cd /etc
 touch .gitignore
 echo "ld.so.cache" >> .gitignore
