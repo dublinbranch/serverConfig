@@ -1,4 +1,5 @@
-Package which are useless
+Package which are useless and I have a slow connection, so are not so important to keep updated
+
 #20 year I do not use a modem! but required for bluethoot
 #zypper -n rm ModemManager
 
