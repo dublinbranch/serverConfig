@@ -37,7 +37,8 @@ for db in       i6927493_wp1 ingsm2023 fabenefa_wp505 magiskGestionale magiskAux
 
 done
 
-#now copy on OVH ftp as a backup, which is SLOOOOW
-rsync --ignore-existing --delete -rz --inplace /srv/backup/mysql    /mnt/ovhBackup/
+#now copy on OVH ftp as a backup, or wherever is wanted
+#rsync --ignore-existing --delete -rz --inplace /srv/backup/mysql    /mnt/ovhBackup/
 
+#delete old stuff
 find /srv/backup/mysql/ -mtime +5 -delete
