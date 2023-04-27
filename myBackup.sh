@@ -42,3 +42,5 @@ done
 
 #delete old stuff
 find /srv/backup/mysql/ -mtime +5 -delete
+
+#TO reload data check the myRestore.sh script
