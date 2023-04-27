@@ -13,7 +13,7 @@ zypper -n addlock patterns-kde-kde_games patterns-games-games patterns-kde-kde_o
 #unused editor
 zypper -n rm nano joe 
 
-#will remove libreoffice base, which is not require for normal usage
+#will remove libreoffice base, which is will mangle it, but is not required for normal usage and should mostly work
 zypper -n rm java-*
 zypper -n addlock java-*
 
