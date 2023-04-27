@@ -139,6 +139,21 @@ chmod +x /tmp/mariadb.sh
 
 ### now create the first user if needed https://s22.trott.pw/dev_wiki/index.php?title=MySQL_Create_User
 
+something like
+
+```
+CREATE ALWAYS BOTH! You have no idea which one php will decide to use!!!
+
+CREATE USER 'roysXX'@'localhost' IDENTIFIED BY 'abc';
+GRANT ALL PRIVILEGES ON *.* TO 'roysXX'@'localhost'  WITH GRANT OPTION;
+flush privileges;
+
+
+CREATE USER 'roysXX'@'127.0.0.1' IDENTIFIED BY 'abc';
+GRANT ALL PRIVILEGES ON *.* TO 'roysXX'@'127.0.0.1'  WITH GRANT OPTION;
+flush privileges;
+```
+
 # NGINX
 Remember for a server to increase the worker and max open file (check the file for info)
 
