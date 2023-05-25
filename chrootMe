@@ -4,9 +4,8 @@ zypper in docker
 rcdocker start
 docker pull opensuse/tumbleweed
 cd /srv/docker
-mkdir suse1 && cd suse1
 docker export $(docker create opensuse/tumbleweed) -o tumbleweed.tar.gz
-tar -xvf tumbleweed.tar.gz 
+tar -xvf tumbleweed.tar.gz -C suse1 
 
 mount -t proc /proc /srv/docker/suse1/proc/
 mount --rbind /sys /srv/docker/suse1/sys/
