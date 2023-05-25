@@ -5,6 +5,7 @@ rcdocker start
 docker pull opensuse/tumbleweed
 cd /srv/docker
 docker export $(docker create opensuse/tumbleweed) -o tumbleweed.tar.gz
+mkdir suse1
 tar -xvf tumbleweed.tar.gz -C suse1 
 
 mount -t proc /proc /srv/docker/suse1/proc/
