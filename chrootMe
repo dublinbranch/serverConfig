@@ -8,9 +8,11 @@ docker export $(docker create opensuse/tumbleweed) -o tumbleweed.tar.gz
 mkdir suse1
 tar -xvf tumbleweed.tar.gz -C suse1 
 
-mount -t proc /proc /srv/docker/suse1/proc/
-mount --rbind /sys /srv/docker/suse1/sys/
-mount --rbind /dev /srv/docker/suse1/dev/
+mkdir /srv/docker/suse3/sys/
+mkdir /srv/docker/suse3/dev/
+mount -t proc /proc /srv/docker/suse3/proc/
+mount --rbind /sys /srv/docker/suse3/sys/
+mount --rbind /dev /srv/docker/suse3/dev/
 
 
 echo "nameserver 8.8.8.8" > etc/resolv.conf
