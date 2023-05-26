@@ -24,6 +24,7 @@ chroot .
 
     to bind mount to access external folder
 
+ mkdir /srv/docker/suse1/srv/www
  mount --bind /srv/www /srv/docker/suse1/srv/www
 
     Php will use the path defined in nginx! so map the EXTERNAL inside, not the opposite
