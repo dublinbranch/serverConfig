@@ -2,7 +2,7 @@ rpm --import https://yum.mariadb.org/RPM-GPG-KEY-MariaDB
 #zypper -n addrepo --gpgcheck --refresh https://yum.mariadb.org/10.5/opensuse/15/x86_64 mariadb
 zypper -n --gpg-auto-import-keys refresh
 #no silent install there is some output and the etc/my.cnf need to be changed
-zypper rm mariadb mariadb-client
+zypper -n in mariadb mariadb-client
 #in case version changes ecc ecc just zypper search -s mariadb to get the latest
 zypper in MariaDB-server MariaDB-rocksdb-engine MariaDB-oqgraph-engine MariaDB-columnstore-engine MariaDB-connect-engine
 
