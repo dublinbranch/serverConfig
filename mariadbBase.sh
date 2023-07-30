@@ -1,4 +1,4 @@
-zypper rm mariadb mariadb-client mariadb-server mariadb-tools
+zypper -n in mariadb mariadb-client mariadb-server mariadb-tools
 
 systemctl start mariadb
 #autostart
