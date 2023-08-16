@@ -1,4 +1,4 @@
-#qt need to be installed by itself
+#qt need to be installed by itself 0Z3JT1Lb0Z3JT1Lb
 
 zypper in -n cmake git okteta clazy cmake mold
 zypper in -n cpp gcc gcc-c++ gcc-c++
