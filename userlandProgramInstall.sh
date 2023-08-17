@@ -1,1 +1,1 @@
-zypper -n yakuake okteta kompare 
+zypper -n in yakuake okteta kompare 
