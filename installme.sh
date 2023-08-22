@@ -8,7 +8,7 @@ zypper in --no-recommends  perf
 
 
 #only for server
-zypper -n in net-snmp net-snmp-devel munin-node percona-toolkit
+#zypper -n in net-snmp net-snmp-devel munin-node percona-toolkit
 
 #to be able to replicate an ssh command on multiple machine, remember the two config file so is not UUUGLY!
 #Put those in your home .Xresources  and csshconf
