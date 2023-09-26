@@ -1,0 +1,21 @@
+i915 0000:00:02
+EDID has corrupt header
+session closed for user munin
+Stopped target Main User Target
+Stopped target Basic System
+Stopped target Paths
+Stopped target Sockets.
+Stopped target Timers.
+Closed D-Bus User Message Bus Socket.
+Closed PipeWire Multimedia System Socket.
+Removed slice User Application Slice.
+Reached target Shutdown.
+Finished Exit the Session.
+Reached target Exit the Session.
+Closed PipeWire Multimedia System Socket
+Closed D-Bus User Message Bus Socket
+Reached target Exit the Session
+Finished Exit the Session
+DHCPREQUEST
+DHCPACK
+terminal=ssh res=failed
