@@ -1,12 +1,3 @@
-i915 0000:00:02
-EDID has corrupt header
-session closed for user munin
-Stopped target Main User Target
-Stopped target Basic System
-Stopped target Paths
-Stopped target Sockets.
-Stopped target Timers.
-Closed D-Bus User Message Bus Socket.
 Closed PipeWire Multimedia System Socket.
 Removed slice User Application Slice.
 Reached target Shutdown.
@@ -19,3 +10,22 @@ Finished Exit the Session
 DHCPREQUEST
 DHCPACK
 terminal=ssh res=failed
+Queued start job for default target Main User Target.
+Created slice User Application Slice.
+Reached target Paths.
+Reached target Timers.
+Starting D-Bus User Message Bus Socket...
+Listening on PipeWire Multimedia System Socket.
+Listening on D-Bus User Message Bus Socket.
+Reached target Sockets.
+Reached target Basic System.
+Reached target Main User Target.
+Startup finished in 110ms.
+Started User Manager for UID .
+munin
+Received disconnect from
+Disconnected from authenticating user
+Invalid user
+DHCPDISCOVER
+DHCPOFFER
+DHCPDECLINE
