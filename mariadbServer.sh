@@ -1,3 +1,5 @@
+THIS IS VERY OLD STUFF; PLEASE DO NOT RELY TOO MUCH ON IT AND USE ONLY AS A REFERENCE
+
 rpm --import https://yum.mariadb.org/RPM-GPG-KEY-MariaDB
 #zypper -n addrepo --gpgcheck --refresh https://yum.mariadb.org/10.5/opensuse/15/x86_64 mariadb
 zypper -n --gpg-auto-import-keys refresh
