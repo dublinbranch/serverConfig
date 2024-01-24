@@ -28,12 +28,14 @@ ssh-keygen
 vi /root/.ssh/authorized_keys
 
 ### DO NOT DISCONNECT! Open another session and check if asking for the password or not
+write those 2 into the file
 
-wget "https://raw.githubusercontent.com/dublinbranch/serverConfig/master/sshd.patch" -O -> /tmp/sshd.patch
-cd /etc 
-git apply /tmp/sshd.patch
+localhost:~ # cat /etc/ssh/sshd_config.d/conf.conf
+PasswordAuthentication no
+ChallengeResponseAuthentication no
+
 rcsshd restart 
-and reconnect using port 1022
+and reconnect 
 ```
 
 # SSH client only
