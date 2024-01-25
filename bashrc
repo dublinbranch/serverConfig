@@ -12,10 +12,14 @@ export HISTFILE=~/.bash_eternal_history
 # http://superuser.com/questions/20900/bash-history-loss
 PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
 
-#force load the autocompletition info
-for file in /etc/bash_completion.d/*.sh ; do
-    source "$file"
-done
+#force load the autocompletition info if present
+if compgen -G "/etc/bash_completion.d/*.sh" > /dev/null; then
+    # If files are found, source each of them
+    for file in /etc/bash_completion.d/*.sh; do
+        source "$file"
+    done
+fi
+
 
 #up autocomplete Suse like 
 #bind '"\e[A": history-search-backward'
