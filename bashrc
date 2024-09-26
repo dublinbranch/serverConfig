@@ -20,6 +20,9 @@ if compgen -G "/etc/bash_completion.d/*.sh" > /dev/null; then
     done
 fi
 
+#color
+#PS1='\[\e[1;32m\]\u\[\e[0m\]@\[\e[1;32m\]\h:\[\e[1;34m\]\w\[\e[0m\]\$ '
+
 
 #up autocomplete Suse like 
 #bind '"\e[A": history-search-backward'
