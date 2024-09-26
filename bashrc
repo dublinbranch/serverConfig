@@ -24,3 +24,6 @@ fi
 #up autocomplete Suse like 
 #bind '"\e[A": history-search-backward'
 #bind '"\e[B": history-search-forward'
+#godies
+#alias ll='ls -alF'
+
