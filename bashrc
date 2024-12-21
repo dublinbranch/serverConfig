@@ -21,12 +21,20 @@ if compgen -G "/etc/bash_completion.d/*.sh" > /dev/null; then
 fi
 
 #color
-#PS1='\[\e[1;32m\]\u\[\e[0m\]@\[\e[1;32m\]\h:\[\e[1;34m\]\w\[\e[0m\]\$ '
+PS1='\[\e[1;32m\]\u\[\e[0m\]@\[\e[1;32m\]\h:\[\e[1;34m\]\w\[\e[0m\]\$ '
 
 
 #up autocomplete Suse like 
 #bind '"\e[A": history-search-backward'
 #bind '"\e[B": history-search-forward'
 #godies
+#if you want `ls' to be colorized:
+export LS_OPTIONS='--color=auto'
+eval "$(dircolors)"
+
 #alias ll='ls -alF'
+
+#prevent mistake, asking for overwrite
+alias cp='cp -i'
+alias mv='mv -i'
 
