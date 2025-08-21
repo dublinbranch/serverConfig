@@ -81,7 +81,6 @@ cd /etc
 touch .gitignore
 echo "ld.so.cache" >> .gitignore
 echo "udev/*" >> .gitignore
-echo "udev/*" >> .gitignore
 echo "ssh/moduli" >> .gitignore
 
 
