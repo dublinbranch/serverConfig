@@ -71,7 +71,8 @@ ServerAliveInterval 60
 ```
 # set proper git usage and first repo
 ```
-zypper in git vim
+#--no-recommends is to skip git-email that will drag in useless stuff
+zypper in --no-recommends git vim
 git config --global ubmodule.fetchJobs 10
 git config --global --edit
 #and configure your user
