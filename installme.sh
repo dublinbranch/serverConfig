@@ -14,8 +14,6 @@ zypper in --no-recommends  perf
 #Put those in your home .Xresources  and csshconf
 zypper -n in clusterssh
 
-rcvnstatd start
-chkconfig vnstatd on
+systemctl enable vnstatd.service 
+systemctl start vnstatd.service 
 
-rcsnmpd start
-chkconfig snmpd on
